@@ -1,0 +1,17 @@
+server:
+  port: 8888
+  
+spring:
+  cloud:
+    config:
+      server: 
+        git:
+          uri: https://github.com/spring-cloud-samples/config-repo
+          search-paths: config-data/api
+
+          default-label: "main"
+          
+  security:
+    user:
+      name: admin
+      password: nimda
